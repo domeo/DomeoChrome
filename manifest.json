@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Domeo Chrome Extension",
+	"description": "Allow quick use of Domeo on currently open webpages from within Google Chrome.",
+	"version": "0.1",
+	"minimum_chrome_version": "6",
+	
+	"permissions": [
+		"tabs",
+		"contextMenus",
+		"http://*/*",
+		"https://*/*"
+	],
+	
+	"icons": {
+		"16" : "images/domeo_16.png",
+		"32" : "images/domeo_32.png",
+		"48" : "images/domeo_48.png",
+		"64" : "images/domeo_64.png",
+		"128" : "images/domeo_128.png"
+	},
+	
+	"web_accessible_resources": [
+		"images/domeo_16.png"
+	],
+	
+	"browser_action": {
+		"default_icon": "images/domeo_32.png"
+	},
+
+	"background": {
+		"scripts": [ "event_page.js" ],
+		"persistent": true
+	},
+	
+	"options_page": "options.htm"
+}

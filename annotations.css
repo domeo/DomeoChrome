@@ -1,0 +1,25 @@
+#domeoAnnotationBar{
+	z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	height: 14pt;
+	min-height: 16px;
+	width: 100%;
+	background: buttonface;
+}
+
+#domeoAnnotationBar img {
+	height: 16px;
+	border: 0;
+}
+
+#domeoAnnotationBar p {
+	display: inline;
+	line-height: 14pt;
+	font-size: 11pt;
+	color: black;
+}
+
+body {
+	margin-bottom: 40px;
+}
